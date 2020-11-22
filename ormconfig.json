@@ -1,0 +1,13 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "goworker",
+  "password": "goworker",
+  "database": "goworker",
+  "entities": ["./src/modules/**/infra/typeorm/models/*.ts"],
+  "migrations": ["./src/common/config/database/migrations/*.ts"],
+  "cli": {
+    "migrationsDir": "./src/common/config/database/migrations"
+  }
+}

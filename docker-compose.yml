@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres
+    container_name: worka_container
+    environment:
+      POSTGRES_DB: worka
+      POSTGRES_USER: worka
+      POSTGRES_PASSWORD: worka
+    ports:
+      - 5432:5432
